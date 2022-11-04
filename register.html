@@ -1,0 +1,31 @@
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="register.css">
+    <script type="text/javascript" >
+        
+        function validateEmail(inputText) {
+  var mailFormat =  /\S+@\S+\.\S+/;
+  if (inputText.value.match(mailFormat)) {
+    alert("Valid address!");
+    return true;
+  } else {
+    alert("Invalid address!");
+    return false;
+  }
+}
+    </script> 
+  </head>
+    <body >
+      <div class="sign-up-form">
+        <h1>Sign up now</h1>
+        <form name="form1"  >
+            <input type="email" name="text1" class="input-box" placeholder="Your email"  >
+            <input type="password" class="input-box" placeholder="Your password">
+            <p><span> <input type="checkbox"></span>I agree to the terms and conditions.</p>
+           <input type="submit" class="signup-btn" value="Submit" onclick="validateEmail(document.form1.text1)"" >
+           <hr>
+           <p>Do you have an account?<a href="history.html">Go to Subscriptions</a></p> 
+        </form>
+      </div>
+    </body>
+</html>
